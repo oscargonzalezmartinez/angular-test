@@ -1,16 +1,17 @@
 app.service("SearchService", function($http){
 			
-			this.getRecords = function(){
+			this.search = function(searchTerm){
 								return $http({
-										method: 'GET',
-										url: 'http://localhost:9000/list'
+										method: 'POST',
+										data:searchTerm,
+										url: '/api/search'
 										});
 			}//getRecords
 			
 			this.getDetail = function(id){
 								return $http({
 										method: 'GET',
-										url: 'http://localhost:9000/get/'+id
+										url: 'http://localhost:9000/api/get/'+id
 										});
 			}//getDetail
 			

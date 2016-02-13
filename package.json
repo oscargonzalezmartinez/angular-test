@@ -1,0 +1,17 @@
+{
+  "name": "EntornoDesarrollo",
+  "description": "Entorno de desarrollo front",
+  "main": "server.js",
+  "dependencies": {
+    "cors": "^2.7.1",
+    "express": "^4.13.3"
+  },
+  "devDependencies": {
+    "body-parser": "^1.15.0",
+    "connect-livereload": "^0.5.4",
+    "cors": "^2.7.1",
+    "express": "^4.13.4",
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^3.8.1"
+  }
+}

@@ -4,7 +4,7 @@ app.service("LoginService", function($http){
 								return $http({
 										method: 'POST',
 										data:user,
-										url: 'http://localhost:9000/login'
+										url: '/api/login'
 										});
 			}//getRecords
 			
