@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 //var multer = require('multer'); // v1.0.5
 //var upload = multer(); // for parsing multipart/form-data
 
-var port = 9000;
+//var port = 9000;
 var app = express();
 
 app.set('port', (process.env.PORT || 8080));
@@ -62,6 +62,8 @@ app.get("/api/buy/:id", function(req, res) {
 	res.send(autores[id]);
 });
 
-app.listen(port,function(err, res) {
-	if(err) throw err;
+app.listen(app.get('port'),function(err, res) {
+	if(err) {throw err};
+	
+	 console.log('Node app is running on port', app.get('port'));
 });
