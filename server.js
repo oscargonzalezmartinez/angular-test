@@ -7,6 +7,10 @@ var bodyParser = require('body-parser');
 var port = 9000;
 var app = express();
 
+app.set('port', (process.env.PORT || 8080));
+
+app.use(express.static(__dirname + '/public'));
+
 	var autores = [
 {id:0,nombre:'Pepe',autor:'A1',especialidad:'G1',precio:10,stock:3,descripcion:'Especialidad 1'},
 {id:1,nombre:'Juan',autor:'A2',especialidad:'G1',precio:10,stock:2,descripcion:'Especialidad 2'},
